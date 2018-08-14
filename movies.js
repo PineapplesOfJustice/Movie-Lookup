@@ -18,7 +18,7 @@ function showMovieInfo(data) {
 
 function makeRequest() {
   if(Number(document.getElementById("movietitle").value) != 0){  
-    var url = "http://www.omdbapi.com/?apikey=d48e8875&t="  + document.getElementById("movietitle").value;
+    var url = "https://www.omdbapi.com/?apikey=d48e8875&t="  + document.getElementById("movietitle").value;
     console.log(url);  
     $.ajax({
       url: url,
